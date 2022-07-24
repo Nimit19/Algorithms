@@ -12,6 +12,7 @@ public class Q6_RotatedBinarySearch {
         if(s > e){
             return -1;
         }
+
         int mid = s + (e - s)/2;
 
         if(a[mid] == target){
