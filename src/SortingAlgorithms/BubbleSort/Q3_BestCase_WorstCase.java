@@ -21,21 +21,21 @@ public class Q3_BestCase_WorstCase {
             c = sc.nextInt();
 
 
-            switch (c){
-                case 1 :
+            switch (c) {
+                case 1 -> {
                     System.out.println("BestCase: ");
-                    for (int i = 0; i<a.length; i++) {
+                    for (int i = 0; i < a.length; i++) {
                         a[i] = i;
                     }
                     start = System.nanoTime();
                     bubbleSort(a);
                     end = System.nanoTime();
                     System.out.println("Execution Time : " + (end - start));
-                    break;
-                case 2 :
+                }
+                case 2 -> {
                     System.out.println("WorstCase: ");
                     int d = 0;
-                    for (int i = a.length-1; i>=0; i--){
+                    for (int i = a.length - 1; i >= 0; i--) {
                         a[i] = d;
                         d++;
                     }
@@ -43,14 +43,11 @@ public class Q3_BestCase_WorstCase {
                     bubbleSort(a);
                     end = System.nanoTime();
                     System.out.println("Execution Time : " + (end - start));
-                    break;
-                case 3 :
-                    done = true;
-                    break;
+                }
+                case 3 -> done = true;
             }
 
         }while (!done);
-
 
     }
 
